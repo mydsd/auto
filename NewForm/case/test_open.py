@@ -23,7 +23,7 @@ class TestSpecialList():
         if 'haojiequ' in url['special-list']:
             self.connect = ConnectDb()
         elif 'dataoke' in url['special-list']:
-            self.connect = ConnectDb(host="39.107.98.125", port=3307, user="dataoke2", password="0Ab9v4Ou0PsMk2soMfVk",dbname="dataoke2")
+            self.connect = ConnectDb(host="", port=3307, user="", password="",dbname="dataoke2")
     def test_list(self):
         res = send.send_request('get',url['special-list'],headers=headers).json()
         id = send.dict_get(res,'id',[])
