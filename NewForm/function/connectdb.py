@@ -1,6 +1,6 @@
 import pymysql
 class ConnectDb():
-    def __init__(self,host="mysql.testdb.quan007.com",port=3306,user="dataoke2",password="0Ab9v4Ou0PsMk2soMfVk",dbname="dataoke2"):
+    def __init__(self,host="mysql.testdb.quan007.com",port=3306,user="",password="",dbname="dataoke2"):
         config = {
             "host": host,
             "port": port,
