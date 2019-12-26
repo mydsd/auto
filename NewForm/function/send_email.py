@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
 class SendEmail():
-    def __init__(self,server= 'smtp.126.com',user='my_dsd@126.com',password='mydsdqaz123',sender='my_dsd@126.com',path=None):
+    def __init__(self,server= 'smtp.126.com',user='my_dsd@126.com',password='',sender='my_dsd@126.com',path=None):
         # 发送邮件服务器
         self.smtpserver = server
         # 发送邮箱用户名和密码
@@ -13,7 +13,7 @@ class SendEmail():
         # 发送邮箱
         self.sender = sender
         # 接受邮箱
-        self.receiver = ['dushundong@mail.dataoke.com','chenquanjun@mail.dataoke.com','dongbenjian@mail.dataoke.com','tanghao@mail.dataoke.com','wangliang@mail.dataoke.com']
+        self.receiver = ['wangliang@mail.dataoke.com']
         # 创建一个带附件的实例
         self.message = MIMEMultipart()
         '''From与To与sendmail保持一致'''
